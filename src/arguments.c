@@ -29,7 +29,7 @@ Argument templates[] = {
     }
 };
 
-#define NUM_ARG sizeof templates
+const int NUM_ARG = (sizeof templates) / (sizeof (Argument));
 
 // Atomic sentences
 char *atoms[] = {

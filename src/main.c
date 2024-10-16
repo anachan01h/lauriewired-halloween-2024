@@ -5,15 +5,16 @@
 
 int main(void) {
     extern Argument templates[];
+    extern int NUM_ARG;
     int i;
     char c;
     bool answer = true;
 
     srand(time(NULL));
     Argument arguments[3] = {
-        argument_new(&templates[0]),
-        argument_new(&templates[1]),
-        argument_new(&templates[2]),
+        argument_new(&templates[rand() % NUM_ARG]),
+        argument_new(&templates[rand() % NUM_ARG]),
+        argument_new(&templates[rand() % NUM_ARG]),
     };
 
     puts("# Logic Captcha");
