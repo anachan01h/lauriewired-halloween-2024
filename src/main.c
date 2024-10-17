@@ -1,7 +1,6 @@
 /* -----------------------------------------------------------------------------
  * ### logic_captcha
- * Prompts the user to determine if arguments are valid or not (because compu-
- * ters can't think logically)
+ * Prompts the user to determine if arguments are valid or not.
  * By: anachan01h
  * -------------------------------------------------------------------------- */
 
@@ -54,9 +53,9 @@ int main(void) {
 
     // Prints the result
     if (answer)
-        puts("Congratulations! You're not a robot!");
+        puts("You're smarter than ChatGPT! ^-^");
     else
-        puts("AI DETECTED!");
+        puts("As a human, you're actually a good AI. :o");
 
     return 0;
 }
