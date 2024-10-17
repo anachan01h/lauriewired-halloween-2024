@@ -8,5 +8,6 @@ typedef struct Argument {
 } Argument;
 
 Argument argument_new(Argument *template);
+void argument_delete(Argument argument);
 
-char **random_components(char *components[]);
+char **random_components(char *components[], int n);
